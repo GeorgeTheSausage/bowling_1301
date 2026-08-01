@@ -36,7 +36,7 @@ public class Bolling : MonoBehaviour
 
     }
 
-    private void Shootball()
+    public void Shootball()
     {
         rb.AddForce(Vector3.forward * forcePower, ForceMode.Impulse);
     }
