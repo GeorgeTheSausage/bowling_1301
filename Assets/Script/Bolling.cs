@@ -10,6 +10,8 @@ public class Bolling : MonoBehaviour
     private int forcePower;
 
 
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,13 +43,13 @@ public class Bolling : MonoBehaviour
         rb.AddForce(Vector3.forward * forcePower, ForceMode.Impulse);
     }
 
-    private void MoveRight()
+    public void MoveRight()
     {
-        transform.position += new Vector3(0.5f,0f,0f) * Time.deltaTime;
+        transform.position += new Vector3(0.9f,0f,0f) * Time.deltaTime;
     }
 
-    private void MoveLeft()
+    public void MoveLeft()
     {
-        transform.position += new Vector3(-0.5f, 0f, 0f) * Time.deltaTime;
+        transform.position += new Vector3(-0.9f, 0f, 0f) * Time.deltaTime;
     }
 }
